@@ -44,6 +44,7 @@ and additional data -->
 <label>Password : </label>
 <input type="text" name="password" value="${pers.password }"><br><br>
 <input type="submit" value="Send">
+<input type="submit" value="partage">
 </form>
  
 <!-- Get passed parameter value -->
