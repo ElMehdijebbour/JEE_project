@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu{
+    flex: 1 0 auto;
+}
+
+/* Head de la page */
+.menu-bar{
+    width: 100%;
+    background: rgb(10, 110, 10);
+    padding-top: 10px;
+}
+
+.menu-bar > ul {
+    display: inline-flex;
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-bar > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-bar > ul > li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    float: left;
+    position: relative;
+}
+
+.menu-bar > ul > li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar > ul > li:hover {
+    background: #2bab0d;
+    border-radius: 15px;
+}
+
+.menu-bar > ul > li:hover .submenu {
+    background: #2eb80f;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0px;
+    z-index: 1000;
+}
+ 
+.relative {
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+    padding: 10px;
+    margin-right: 300px;
+    color: white;
+}
+
+.submenu{
+    display: none;
+    list-style: none;
+    width: max-content;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submenu li{
+    border-bottom: 1px solid rgb(155, 155, 155);
+    padding: 10px;
+}
+.submenu li:hover a{
+    color: rgb(153, 255, 0);
+}
+
+/* Contenu de la page */
+
+.contenu {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+
+/* Pied de page */
+
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background: #2eb80f;
+    color: white;
+}
+
+
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 25px;
+    color: white;
+}
+
+.bloc ul {
+    list-style: none;
+    
+}
+
+.bloc ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.bloc ul a:hover{
+    color: rgb(153, 255, 0);;
+}
+
+.bloc ul li {
+    padding-bottom: 5px;
+}
+
+.contenu-footer div h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}

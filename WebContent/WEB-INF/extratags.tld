@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+        
+    <tlib-version>1.0</tlib-version>
+	<jsp-version>2.3</jsp-version>
+	<short-name>VaccinationLib</short-name>
+	<display-name>Vaccination extra tags library</display-name>
+	<uri>http://vaccination.ma/tld/extratags</uri>
+
+	<tag>
+	
+		<name>MenuBar</name>
+		<tagclass>ma.vaccination.ihm.tags.MenuBar</tagclass>
+		<bodycontent>JSP</bodycontent>
+		
+	</tag>
+	
+	<tag>
+	
+		<name>FooterBar</name>
+		<tagclass>ma.vaccination.ihm.tags.FooterBar</tagclass>
+		<bodycontent>JSP</bodycontent>
+		
+	</tag>
+
+</taglib>
