@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<taglib>
+        
+    <tlib-version>2.0</tlib-version>
+	<jsp-version>2.3</jsp-version>
+	<short-name>VaccinationLib</short-name>
+	<display-name>Vaccination extra tags library</display-name>
+	<uri>http://vaccination.ma/tld/extratags</uri>
+
+	<tag>
+	
+		<name>MenuBar</name>
+		<tagclass>ma.vaccination.ihm.tags.MenuBar</tagclass>
+		<bodycontent>JSP</bodycontent>
+		
+	</tag>
+	
+		<name>RessourcesImport</name>
+		<tagclass>ma.vaccination.ihm.tags.RessourcesImport</tagclass>
+		<headcontent>JSP</headcontent>
+		
+	<tag>
+	
+		<name>FooterBar</name>
+		<tagclass>ma.vaccination.ihm.tags.FooterBar</tagclass>
+		<bodycontent>JSP</bodycontent>
+		
+	</tag>
+
+</taglib>

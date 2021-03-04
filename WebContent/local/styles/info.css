@@ -1,0 +1,10 @@
+.horaire > ul {
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 40%;
+}
+
+.horaire > ul > li{
+    padding-bottom: 5px;
+    font-size: 18px;
+}
