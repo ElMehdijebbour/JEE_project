@@ -4,6 +4,7 @@
 <html lang="en">
    <head>
       <title>Vaccination</title>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
       <meta name="description" content="">
