@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ma.vaccination.dao.PersonneDAO;
 import ma.vaccination.model.Personne;
 import ma.vaccination.traitment.GenerateurPDF;
 
@@ -28,12 +29,21 @@ public class PDFCertificatExport extends HttpServlet {
 	protected void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
 		// Chargement du path du fichier pdf model du certificat
 		String masterPath = request.getServletContext().getRealPath( "/WEB-INF/CertificatMaster.pdf" );
-		// Récupération des données de la personne 
+		// Rcupration des donnes de la personne 
 		String cin = request.getParameter("txtCIN");
-		Personne person = new Personne(0,cin,"", "FOSTINOS", "Fostinos","Av Allal Al Fassi","","","Etudiant",20);
-		// Génération du fichier pdf
-		response.setContentType( "application/pdf" );
-		GenerateurPDF.generateCertificat(masterPath,person, request, response);
+		String password = request.getParameter("txtPassword");
+		Personne person = PersonneDAO.isLoginValid(cin, password);
+		if( person != null ) {
+			// Connexion russie 
+			// Gnration du fichier pdf
+			response.setContentType( "application/pdf" );
+			GenerateurPDF.generateCertificat(masterPath,person, request, response);
+		}else {
+			// Connexion choue : affichage de message d'erreur sur la page d'authentification
+			request.setAttribute("errorMessage", "Bad identity");
+			request.getRequestDispatcher( "pages/certificat.jsp" ).forward( request, response );
+		}
+		
 	
 	}
 	

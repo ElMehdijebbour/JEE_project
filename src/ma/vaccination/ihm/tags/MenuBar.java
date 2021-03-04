@@ -13,7 +13,7 @@ public class MenuBar  extends TagSupport{
 			+ "        <div class=\"container\">\r\n"
 			+ "            <a class=\"navbar-brand\" href=\"index.html\">\r\n"
 			+ "			    <div class=\"row\">\r\n"
-			+ "					<img src=\"local/images/logo.png\" style=\"width:110px;height=100px\">"
+			+ "					<img src=\"local/images/logo.png\" style=\"width:120px;height=100px\">"
 			+ "					<img src=\"http://www.inpt.ac.ma/sites/all/themes/custom/inpt/img/logo-text.png\" class=\"logo-text-img\" alt=\"\">\r\n"
 			+ "						 <h5>DIGITAL <br>     INNOVATION <br>    BY INPT</h5>			<!-- \"La Grande École<br>des Télécommunications<br>et des Technologies<br>de l’Information\"-->\r\n"
 			+ "						</div>\r\n"
