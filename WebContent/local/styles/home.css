@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: serif;
+    font-family:  sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;

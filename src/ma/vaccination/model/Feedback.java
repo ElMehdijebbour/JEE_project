@@ -1,14 +1,20 @@
 package ma.vaccination.model;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Feedback {
 	
+	@Id 
 	private int fb_id;
 	private int id;
 	private String fb_description;
 	private String fb_date;
 	
 	
-	
+	public Feedback() {
+		
+	}
 	
 	public Feedback(int fb_id, int id, String fb_description, String fb_date) {
 		this.fb_id = fb_id;

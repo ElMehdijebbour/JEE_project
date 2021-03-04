@@ -22,3 +22,8 @@
     text-align: justify;
     font-size: 18px;
 }
+
+.contenu-bloc > div > p > span {
+    float: left;
+    margin-right: 50px;
+}

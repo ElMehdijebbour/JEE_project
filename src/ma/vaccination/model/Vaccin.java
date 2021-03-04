@@ -1,13 +1,22 @@
 package ma.vaccination.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Vaccin {
 	
+	@Id @GeneratedValue( strategy=GenerationType.IDENTITY )
 	private int vac_id;
 	private int vac_serie;
 	private int vac_dose;
 	private String vac_brand;
 	
-	
+	public Vaccin() {
+		
+	}
 	
 	public Vaccin(int vac_id, int vac_serie, int vac_dose, String vac_brand) {
 		this.vac_id = vac_id;

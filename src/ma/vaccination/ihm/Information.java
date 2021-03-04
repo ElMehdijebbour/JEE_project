@@ -23,7 +23,6 @@ public class Information extends HttpServlet {
 	
 	@Override
 	protected void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-		request.getRequestDispatcher( "pages/information.jsp" ).forward( request, response );
 	}
 	
 

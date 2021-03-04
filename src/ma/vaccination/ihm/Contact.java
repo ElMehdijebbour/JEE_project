@@ -1,6 +1,6 @@
 package ma.vaccination.ihm;
 
-import java.io.IOException;
+import java.io.IOException; 
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,7 +23,6 @@ public class Contact extends HttpServlet {
 	
 	@Override
 	protected void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-		request.getRequestDispatcher( "pages/contact.jsp" ).forward( request, response );
 	}
 	
 
